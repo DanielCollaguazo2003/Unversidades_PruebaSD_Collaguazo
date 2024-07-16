@@ -1,0 +1,8 @@
+ups\edu\ec\prueba\services\UniversidadService.class
+ups\edu\ec\prueba\business\GestionDatos.class
+ups\edu\ec\prueba\dao\UniversidadDAO.class
+ups\edu\ec\prueba\model\Universidad.class
+ups\edu\ec\prueba\business\GestionUniversidades.class
+ups\edu\ec\prueba\services\ErrorMessage.class
+ups\edu\ec\prueba\services\PathBase.class
+ups\edu\ec\prueba\services\CORSFilter.class
