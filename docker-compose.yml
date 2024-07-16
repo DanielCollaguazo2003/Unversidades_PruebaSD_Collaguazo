@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    container_name: postgres-2
+    environment:
+      - POSTGRES_DB=prueba
+      - POSTGRES_USER=daniel
+      - POSTGRES_PASSWORD=12345
+    networks:
+      - red
+
+  servicio-prueba:
+    image: danielcollaguazo/servicio-prueba
+    ports:
+      - "8080:8080"
+      - "9990:9990"
+    depends_on:
+      - postgres
+    networks:
+      - red
+networks:
+  red:
